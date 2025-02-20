@@ -1,0 +1,53 @@
+GET http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "login": "user2",
+    "password": "1"
+}
+
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InRlc3R1c2VyMiIsImlhdCI6MTc0MDA4MTcxOSwiZXhwIjoxNzQwMDgxNzc5fQ.VbewqWrEk6Ck7sHIB4m_h0A7RDnqb1tqV49MYZGiPIk
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InRlc3R1c2VyMiIsImlhdCI6MTc0MDA4MTcxOSwiZXhwIjoxNzQwOTQ1NzE5fQ.OX8sZcZkzcxslLKXwPHAB-NDMgdA17vK80F3_WvTdQA
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "login": "user2",
+    "password": "1"
+}
+
+
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InVzZXIyIiwiaWF0IjoxNzQwMDgzOTcyLCJleHAiOjE3NDA5NDc5NzJ9.JbF7qO2hxuNVWYkKcE3msRo7Dlqn5RKDwx7AVHu5v6M
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "login": "testuser2",
+    "password": "1"
+}
+
+###
+GET http://localhost:3000/users/6
+Authorization: Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6InVzZXIyIiwiaWF0IjoxNzQwMDg1MTM5LCJleHAiOjE3NDAwODU3Mzl9.fQTh48ZJwjVGp0_wuUQ7bCo9LYJ42F1POunuFj8yphE
+
+###
+
+PUT http://localhost:3000/users/2
+Content-Type: application/json
+
+{
+    "login": "changedtestid2",
+    "password": "changedpass"
+}
+
+###
+
+DELETE http://localhost:3000/users/5
