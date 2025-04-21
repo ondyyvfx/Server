@@ -3,6 +3,8 @@
 This is the project I built during the **WorldSkills 2025** competition at my college.  
 I proudly achieved **1st place**, scoring **100/100** for both the server and client side.
 
+![Diploma](./photo_5201720036073533699_y.jpg)
+
 > ⚠️ Note: I’m only able to share about **60%** of the full project due to restrictions.
 
 ---
